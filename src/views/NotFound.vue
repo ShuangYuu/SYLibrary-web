@@ -7,10 +7,8 @@
   </div>
 </template>
 
-
 <style scoped>
-
-.main{
+.main {
   display: flex;
   height: 100vh;
   justify-content: center;
@@ -18,7 +16,7 @@
   background-color: #f0f2f5;
 }
 
-.box{
+.box {
   display: flex;
   flex-direction: column;
   height: 800px;
@@ -26,5 +24,4 @@
   background-color: #ffffff;
   align-items: center;
 }
-
 </style>

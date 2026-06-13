@@ -7,6 +7,7 @@ import LoginView from '@/views/login/LoginView.vue'
 import AdminView from '@/views/AdminView.vue'
 import NotFound from '@/views/NotFound.vue'
 import BookView from '@/views/BookView.vue'
+import BookImportView from '@/views/BookImportView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -42,6 +43,11 @@ const router = createRouter({
           path: 'books',
           name: 'Books',
           component: BookView,
+        },
+        {
+          path: 'book-import',
+          name: 'BookImport',
+          component: BookImportView,
         },
       ]
     },

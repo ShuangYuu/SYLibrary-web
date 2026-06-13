@@ -13,8 +13,7 @@
       <el-table-column prop="id" label="ID" width="100" />
       <el-table-column prop="username" label="用户名" width="200" />
       <el-table-column prop="phone" label="联系方式" width="250" />
-      <el-table-column prop="email" label="邮箱" stroke-width="200"></el-table-column>
-
+      <el-table-column prop="email" label="邮箱" stroke-width="200" />
       <el-table-column label="操作" width="180">
         <template #default="scope">
           <el-button size="small" @click="handleEdit(scope.row)">编辑</el-button>
@@ -100,11 +99,6 @@
   </el-dialog>
 
 </template>
-
-
-
-
-
 
 <script setup>
 import {onMounted, ref, watch, reactive} from 'vue';
