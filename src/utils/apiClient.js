@@ -2,7 +2,7 @@ import axios from "axios";
 import { ElMessage } from 'element-plus';
 import router from "@/router/index.js";
 
-const BASE_HOST = 'http://localhost:8080';
+const BASE_HOST = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8080';
 
 const apiClient = axios.create({
   baseURL: BASE_HOST,
