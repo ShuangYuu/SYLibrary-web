@@ -10,7 +10,7 @@
 
     <div class="login-box">
       <div class="login-heading">
-        <div class="login-mark">典</div>
+        <div class="login-mark">霜</div>
         <p class="login-kicker">Metadata Acquisition</p>
         <h2 class="login-title">数字图书元数据采集系统</h2>
       </div>
