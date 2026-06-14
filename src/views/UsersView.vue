@@ -57,8 +57,8 @@
       </el-form-item>
       <el-form-item label="性别" prop="sex" style="width: 150px">
         <el-select v-model="form.sex" placeholder="">
-          <el-option lable="男" value="男" />
-          <el-option lable="女" value="女" />
+          <el-option label="男" value="男" />
+          <el-option label="女" value="女" />
         </el-select>
       </el-form-item>
       <el-form-item label="联系方式" prop="phone" style="width: 200px">

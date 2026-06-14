@@ -93,10 +93,11 @@ onMounted(() => {
 
 <style scoped>
 .library-shell {
-  min-height: 100dvh;
+  height: 100dvh;
   display: grid;
   grid-template-rows: 76px 1fr;
   color: var(--library-ink);
+  overflow: hidden;
 }
 
 .library-header {
@@ -165,9 +166,20 @@ onMounted(() => {
   font-weight: 600;
 }
 
+.header-actions :deep(.el-tooltip__trigger),
+.el-dropdown-link {
+  outline: none;
+  box-shadow: none;
+}
+
+.header-actions :deep(.el-tooltip__trigger:hover),
+.header-actions :deep(.el-tooltip__trigger:focus),
+.header-actions :deep(.el-tooltip__trigger:focus-visible),
+.el-dropdown-link:hover,
+.el-dropdown-link:focus,
 .el-dropdown-link:focus-visible {
-  outline: 2px solid rgba(106, 169, 214, 0.5);
-  outline-offset: 4px;
+  outline: none;
+  box-shadow: none;
 }
 
 .library-body {
@@ -175,6 +187,7 @@ onMounted(() => {
   grid-template-columns: 236px minmax(0, 1fr);
   gap: 18px;
   min-height: 0;
+  overflow: hidden;
   padding: 18px;
 }
 

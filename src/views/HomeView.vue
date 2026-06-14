@@ -217,7 +217,7 @@ onMounted(() => {
 
 <style scoped>
 .home-page {
-  min-height: calc(100dvh - 136px);
+  min-height: 0;
 }
 
 .welcome-panel {
